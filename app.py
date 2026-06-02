@@ -1,19 +1,13 @@
 import streamlit as st
 import joblib
 
-st.set_page_config(page_title="Amazon Review AI Predictor", page_icon="🤖")
+st.title("Amazon Review AI Predictor")
 
 @st.cache_resource
 def load_model():
     return joblib.load("amazon_review_pipeline_FIXED.pkl")
 
 pipeline = load_model()
-
-st.title("Amazon Review AI Predictor")
-
-st.write(
-    "Type an Amazon customer review and the model will predict whether it is positive or negative."
-)
 
 review_text = st.text_area(
     "Enter review text:",
