@@ -25,3 +25,9 @@ if st.button("Predict"):
     st.write("Confidence:", round(float(max(probabilities)), 4))
     st.write("Negative Probability:", round(float(probabilities[0]), 4))
     st.write("Positive Probability:", round(float(probabilities[1]), 4))
+st.markdown("---")
+
+st.link_button(
+    "View Full Analytics Dashboard",
+    "https://app.powerbi.com/reportEmbed?reportId=01aa2633-8515-4806-aa5b-4ea0b74bded0&autoAuth=true&ctid=5f86736b-ef43-4992-9624-06dc6eeaf097"
+)
