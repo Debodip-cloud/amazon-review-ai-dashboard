@@ -31,3 +31,11 @@ st.link_button(
     "View Full Analytics Dashboard",
     "https://app.powerbi.com/reportEmbed?reportId=01aa2633-8515-4806-aa5b-4ea0b74bded0&autoAuth=true&ctid=5f86736b-ef43-4992-9624-06dc6eeaf097"
 )
+st.write(
+    "Download the Power BI dashboard file and open it using Power BI Desktop."
+)
+
+st.link_button(
+    "Download Power BI Dashboard (.pbix)",
+    "https://github.com/Debodip-cloud/amazon-review-ai-dashboard/raw/main/amazon_customer_review.pbix"
+)
